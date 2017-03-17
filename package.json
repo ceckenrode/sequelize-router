@@ -1,0 +1,27 @@
+{
+  "name": "sequelize-router",
+  "version": "1.0.0",
+  "description": "A restful route generator for Sequelize.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceckenrode/sequelize-router.git"
+  },
+  "keywords": [
+    "sequelize",
+    "router",
+    "mysql",
+    "express",
+    "rest",
+    "middleware"
+  ],
+  "author": "Christian Eckenrode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ceckenrode/sequelize-router/issues"
+  },
+  "homepage": "https://github.com/ceckenrode/sequelize-router#readme"
+}
