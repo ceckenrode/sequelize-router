@@ -2,6 +2,14 @@
 
 ## An easy to use, RESTful route generator designed to work with Sequelize.
 
+## Why use Sequelize Router?
+
+* It's tiny (2kb unminified)
+
+* It's easy to use! You can get up and running in about a minute with almost zero configuration.
+
+* It's customizable and extensible. Easily override any of the default route controllers.
+
 ## Installation
 
 Available on [npm](https://npmjs.com/package/sequelize-router):
