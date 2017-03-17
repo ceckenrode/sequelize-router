@@ -26,6 +26,8 @@ app.use('/api', sequelizeRouter(db.Store));
 app.use('/api', sequelizeRouter(db.Transaction));
 ```
 
+### That's literally it. Restful API Routes are now created for three models.
+
 * In the example above, RESTful API routes are being created for the `Inventory`, `Store` and `Transaction` models. Model names are lowercased and used to construct endpoints. Example:
 
   1. GET `/api/inventory` => Runs a `findAll` query on the inventory table, additionally filterable with optional query parameters. e.g.
