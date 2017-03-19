@@ -18,4 +18,4 @@ module.exports = function resourceRouter(route) {
     }
   }
   return router;
-}
+};

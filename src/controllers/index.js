@@ -14,7 +14,6 @@ module.exports = function(model, override) {
         });
     },
     find: function(req, res) {
-      console.log('jere');
       model.findAll({
           where: req.params
         })
