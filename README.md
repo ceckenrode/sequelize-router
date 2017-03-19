@@ -23,7 +23,7 @@ npm install sequelize-router
 
 ```js
 var express = require('express');
-// Require the sequelize-router library and any models to be used
+// Require the sequelize-router middleware and any models to be used
 var sequelizeRouter = require('sequelize-router');
 var db = require('./models');
 
