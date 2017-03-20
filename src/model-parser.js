@@ -1,5 +1,5 @@
 var resourceRouter = require('./resource-router');
-var methods = require('./methods');
+var methods = require('./controllers');
 
 module.exports = function(model, override) {
   if (model.name.toLowerCase() !== "sequelize") {
