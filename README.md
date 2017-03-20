@@ -68,3 +68,9 @@ app.use('/api', sequelizeRouter(db.Transaction));
   ## Authors
 
   Christian Eckenrode
+
+  ## Contributors
+  
+  * [Alan Chu](https://github.com/thechutrain)
+  
+  * [Ray McCann](https://github.com/rmcc3)
