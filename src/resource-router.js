@@ -12,8 +12,8 @@ module.exports = function resourceRouter(route) {
     var fn = map[key] || key;
     if (typeof router[fn] === 'function') {
       var url = ~keyed.indexOf(key) ? (name + '/:id') : name;
-     router[fn](url, route[key]);
+      router[fn](url, route[key]);
     }
   }
   return router;
-}
+};
