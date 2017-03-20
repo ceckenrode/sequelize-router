@@ -1,4 +1,4 @@
-# Sequelize Router
+# Sequelize Router :sunglasses:
 
 ## An easy to use, RESTful route generator designed to work with Sequelize.
 
@@ -50,7 +50,7 @@ app.use('/api', sequelizeRouter(db.Transaction));
 
 * In the example above, RESTful API routes are being created for the `Inventory`, `Store` and `Transaction` models. Model names are lowercased and used to construct endpoints.
 
-### 2. API Documentation 
+### API Documentation 
 
 | HTTP method         | URL                                                         | Description                     |
 | :-------------:     | -------------------------------------------                 | ------------------------------- |
