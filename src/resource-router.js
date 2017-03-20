@@ -13,7 +13,6 @@ module.exports = function resourceRouter(route) {
     if (typeof router[fn] === 'function') {
       console.log(fn)
       url = ~keyed.indexOf(key) ? (name + '/:id') : name;
-      console.log(url)
      router[fn](url, route[key]);
     }
   }
