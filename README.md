@@ -2,6 +2,14 @@
 
 ## An easy to use, RESTful route generator designed to work with Sequelize.
 
+## Why use Sequelize Router?
+
+* It's tiny (2kb unminified)
+
+* It's easy to use! You can get up and running in about a minute with almost zero configuration.
+
+* It's customizable and extensible. Easily override any of the default route controllers.
+
 ## Installation
 
 Available on [npm](https://npmjs.com/package/sequelize-router):
@@ -15,7 +23,7 @@ npm install sequelize-router
 
 ```js
 var express = require('express');
-// Require the sequelize-router library and any models to be used
+// Require the sequelize-router middleware and any models to be used
 var sequelizeRouter = require('sequelize-router');
 var db = require('./models');
 
