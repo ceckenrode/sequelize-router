@@ -9,10 +9,10 @@ module.exports = function resourceRouter(route) {
   if (route.middleware) router.use(route.middleware);
 
   for (key in route) {
-    fn = map[key] || key;
+    var fn = map[key] || key;
     if (typeof router[fn] === 'function') {
       console.log(fn)
-      url = ~keyed.indexOf(key) ? (name + '/:id') : name;
+      var url = ~keyed.indexOf(key) ? (name + '/:id') : name;
      router[fn](url, route[key]);
     }
   }
