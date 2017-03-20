@@ -1,6 +1,6 @@
 {
   "name": "sequelize-router",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A restful route generator for Sequelize.",
   "main": "index.js",
   "scripts": {
