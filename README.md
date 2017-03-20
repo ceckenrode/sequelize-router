@@ -18,6 +18,9 @@ Available on [npm](https://npmjs.com/package/sequelize-router):
 npm install sequelize-router
 ```
 
+## Prerequisites
+
+**sequelize-router** is middleware that runs on top of [sequelize](https://www.npmjs.com/package/sequelize), a popular ORM for node.js applications. Therefore, before using **sequelize-router** make sure that you have configured a database in your app. 
 
 ## Usage
 
