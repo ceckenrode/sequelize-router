@@ -2,6 +2,8 @@
 
 ## An easy to use, RESTful route generator designed to work with Sequelize.
 
+[![NPM](https://nodei.co/npm/sequelize-router.png)](https://nodei.co/npm/sequelize-router/)
+
 ## Why use Sequelize Router?
 
 * It's tiny (2kb unminified)
