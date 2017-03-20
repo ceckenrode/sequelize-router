@@ -11,7 +11,6 @@ module.exports = function resourceRouter(route) {
   for (key in route) {
     var fn = map[key] || key;
     if (typeof router[fn] === 'function') {
-      console.log(fn)
       var url = ~keyed.indexOf(key) ? (name + '/:id') : name;
      router[fn](url, route[key]);
     }
