@@ -1,7 +1,7 @@
 var Router = require('express').Router;
 
-var keyed = ['findById', 'update', 'remove'],
-	map = { find:'get', findOne:'get', findById:'get', create:'post', update:'put', remove:'delete' };
+var keyed = ['findById', 'update', 'remove'];
+var map = { find:'get', findOne:'get', findById:'get', create:'post', update:'put', remove:'delete' };
   
 module.exports = function resourceRouter(route) {
   var router = new Router();
