@@ -2,7 +2,6 @@ module.exports = function(model, override) {
   var override = override || {};
   var methods = {
     findById: function(req, res) {
-      console.log(req);
       model.findOne({
           where: { id: req.params.id }
         })
