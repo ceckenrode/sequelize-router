@@ -2,9 +2,8 @@ module.exports = function(model, override) {
   var override = override || {};
   var methods = {
     findById: function(req, res) {
-      console.log(req);
       model.findOne({
-          where: req.params.id
+          where: { id: req.params.id }
         })
         .then(function(dbUser) {
           res.json(dbUser);
@@ -35,7 +34,7 @@ module.exports = function(model, override) {
     },
     update: function(req, res) {
       model.update(req.body, {
-          where: req.params.id
+          where: { id: req.params.id }
         })
         .then(function(dbModel) {
           res.json(dbModel);
@@ -45,7 +44,9 @@ module.exports = function(model, override) {
         });
     },
     remove: function(req, res) {
-      model.destroy({ where: req.params.id })
+      model.destroy({ 
+        where: { id: req.params.id }
+       })
         .then(function(dbModel) {
           res.json(dbModel);
         })
