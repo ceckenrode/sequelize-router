@@ -55,6 +55,7 @@ app.use('/api', sequelizeRouter(db.Transaction));
 | HTTP method         | URL                                                         | Description                     |
 | :-------------:     | -------------------------------------------                 | ------------------------------- |
 | **`GET`**           |  `/api/inventory`                                           | Runs a `findAll` query on the inventory table, additionally filterable with optional query parameters. <br> *e.g. `/api/inventory?stock%5Blte%5D=50` **or** `/api/inventory?category=home_improvement` |
+| **`GET`**           |  `/api/inventory/:id`                                           | Runs a `findOne` query on the inventory table and retrieves one record with the id specified in `req.params.id`. |
 | **`POST`**          |  `/api/inventory/`                                          | Runs a `create` query on the inventory table, using data passed in req.body to construct the new record. |
 | **`PUT`**           | `/api/inventory/:id`                                        | Runs an `update` query on the inventory table, using data passed in `req.body` to update the record with the `id` specified in `req.params.id`. By default, query parameters are ignored.|
 |**`DELETE`**            | `/api/inventory/:id`                                        | Runs an `destroy` query on the inventory table, using data passed in `req.body` to update the record with the `id` specified in `req.params.id`. By default, query parameters are ignored. |
