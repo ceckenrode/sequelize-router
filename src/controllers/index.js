@@ -14,7 +14,7 @@ module.exports = function(model, override) {
     },
     find: function(req, res) {
       model.findAll({
-          where: req.params
+          where: req.query
         })
         .then(function(dbModel) {
           res.json(dbModel);
